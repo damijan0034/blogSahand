@@ -8,12 +8,14 @@ import Signin from "./pages/Signin.jsx"
 import Signout from "./pages/Signout.jsx"
 import Dashboard from "./pages/Dashboard.jsx"
 import Projects from "./pages/Projects.jsx"
+import Header from "./components/Header";
 
 function App() {
  
 
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
