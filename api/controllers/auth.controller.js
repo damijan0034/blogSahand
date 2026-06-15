@@ -10,7 +10,7 @@ export const signup=async(req,res,next)=>{
         const hashedPassword=bcryptjs.hashSync(password,10)
 
        const user= await User.create({username,email,password:hashedPassword})
-       res.json({message:"User created",user})
+       res.json({message:"User created"})
     } catch (error) {
         next(error)
     }
