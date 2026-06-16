@@ -12,6 +12,8 @@ import Header from "./components/Header";
 import SignUp from "./pages/SignUp.jsx";
 import SignIn from "./pages/SignIn.jsx";
 
+import FooterCom from "./components/Footer.jsx";
+
 function App() {
  
 
@@ -27,6 +29,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />}  />
         <Route path="/projects" element={<Projects />}  />
       </Routes>
+      <FooterCom />
      </BrowserRouter>
     
    
